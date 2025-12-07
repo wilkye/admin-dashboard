@@ -22,6 +22,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    min-height: 111px;
     z-index: 1;
 }
 
@@ -30,7 +31,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
 }
@@ -52,9 +53,10 @@
 
 .projects .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: 1fr;
-    gap: 15px;
+    gap: 25px;
+    height: 100%;
 }
 
 .card {
@@ -63,12 +65,14 @@
     border-radius: 6px;
     border-left: 6px solid rgb(240, 180, 41);
     height: 100%;
+    padding: 30px 15px 15px 15px;
+    box-sizing: border-box;
 }
 
 .content-container {
-    margin: 30px 15px 0 15px;
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
 }
 
 .card-title {
@@ -89,7 +93,7 @@
 .icon {
     fill: rgb(51, 51, 51);
     padding: 5px;
-    width: 20px;
+    width: 17px;
 }
 
 .icon:hover {
