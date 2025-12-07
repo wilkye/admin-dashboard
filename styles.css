@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -18,7 +19,7 @@
 
 .header {
     background-color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.308);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     z-index: 1;
@@ -26,6 +27,50 @@
 
 .content {
     background-color: rgba(226, 232, 240);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.p-title {
+    margin: 20px 0 5px 0;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
+    border-radius: 6px;
+    border-left: 6px solid rgb(240, 180, 41);
+    height: 100%;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
