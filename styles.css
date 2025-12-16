@@ -69,6 +69,8 @@ button:hover {
     grid-row: 1 / 2;
     min-height: 111px;
     z-index: 1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     /* outline: red solid 1px; */
 }
 
