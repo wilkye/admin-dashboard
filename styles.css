@@ -44,8 +44,12 @@ button {
 }
 
 button svg {
-    fill: white;
     width: 24px;
+}
+
+button:hover {
+    fill: rgb(226, 226, 226);
+    color: rgb(226, 226, 226);
 }
 
 .sidebar-item,
