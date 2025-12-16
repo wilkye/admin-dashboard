@@ -74,6 +74,13 @@ button:hover {
     /* outline: red solid 1px; */
 }
 
+.search,
+.acc-info,
+.search-bar {
+    display: grid;
+    grid-auto-flow: column;
+}
+
 .content {
     background-color: rgba(226, 232, 240);
     grid-column: 2 / 3;
