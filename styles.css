@@ -112,6 +112,7 @@ button:hover {
 
 .bar {
     height: 60%;
+    font-size: 1.1rem;
     background-color: rgba(226, 232, 240);
     border: none;
     border-radius: 50px;
