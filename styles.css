@@ -82,15 +82,17 @@ button:hover {
 }
 
 .search {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr auto;
     padding-top: 20px;
     box-sizing: border-box;
+    gap: 120px;
 }
 
 .acc-info {
+    padding-right: 25px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .acc-info p {
@@ -105,7 +107,7 @@ button:hover {
 }
 
 .search-icon {
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .bar {
@@ -143,7 +145,7 @@ button:hover {
 }
 
 .acc-pic-big {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .acc-pic-big div {
@@ -164,10 +166,11 @@ button:hover {
 }
 
 .buttons {
-    padding-right: 15px;
+    padding-right: 25px;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
